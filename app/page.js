@@ -7,7 +7,7 @@ async function fetchPokemon(limit = 20
   );
 
   const list = await res.json();
-git status
+
   const detailedPokemon = await Promise.all(
     list.results.map(async (p) => {
       const res = await fetch(p.url);
